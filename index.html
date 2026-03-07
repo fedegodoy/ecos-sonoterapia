@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>ëcos - sonidos que sanan</title>
+  <meta name="description"
+    content="Sesiones de sonoterapia con cuencos tibetanos y reiki en La Florida, Santiago de Chile. Sana, relaja y armoniza cuerpo y mente. Reserva tu sesión hoy.">
+  <meta name="keywords"
+    content="sonoterapia, cuencos tibetanos, reiki, terapia holística, La Florida, Santiago, Chile, sanación sonora, relajación, bienestar">
+  <meta name="author" content="Fanny Villagra">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180x180.png">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ecossonoterapia.cl" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ëcos - sonidos que sanan">
+  <meta property="og:description"
+    content="Sesiones de sonoterapia con cuencos tibetanos y reiki en La Florida, Santiago de Chile.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "ëcos - sonidos que sanan",
+    "image": "https://ecos-sonoterapia.cl/assets/logo-ecos-verde.png",
+    "@id": "https://ecos-sonoterapia.cl/",
+    "url": "https://ecos-sonoterapia.cl/",
+    "telephone": "+56994375270",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "La Florida",
+      "addressRegion": "Región Metropolitana",
+      "addressCountry": "CL"
+    },
+    "description": "Sonoterapia y Reiki en La Florida. Relaja, equilibra y armoniza tu cuerpo y mente a través de vibraciones sonoras con Fanny Villagra."
+  }
+  </script>
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body id="top" class="overflow-x-hidden">
+
+  <!-- ====================================
+       NAVBAR
+       ==================================== -->
+  <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50 border-b border-transparent">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-center gap-2 group">
+        <img src="/assets/logo-ecos-verde.png" alt="ëcos sonidos que sanan Logo" class="h-8 w-auto">
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#sobre" class="text-sm font-medium text-text-body hover:text-olive transition-colors">Sobre mí</a>
+        <a href="#sesiones" class="text-sm font-medium text-text-body hover:text-olive transition-colors">Sesiones</a>
+        <a href="#beneficios"
+          class="text-sm font-medium text-text-body hover:text-olive transition-colors">Beneficios</a>
+        <a href="#experiencias"
+          class="text-sm font-medium text-text-body hover:text-olive transition-colors">Experiencias</a>
+        <a href="#faq" class="text-sm font-medium text-text-body hover:text-olive transition-colors">Dudas</a>
+        <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20sonoterapia%20%F0%9F%99%8F"
+          target="_blank" rel="noopener" class="btn-secondary text-sm !py-2.5 !px-5">
+          Reservar
+        </a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button id="mobile-toggle" class="md:hidden p-2 text-text-dark" aria-label="Abrir menú">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[100] bg-[#f2f2f2] flex flex-col md:hidden">
+    <div class="flex items-center justify-between px-6 py-4">
+      <a href="#top" class="flex-shrink-0" id="mobile-logo-menu"><img src="/assets/logo-ecos-verde.png"
+          alt="ëcos sonidos que sanan Logo" class="h-8 w-auto"></a>
+      <button id="mobile-close" class="p-2 text-text-dark" aria-label="Cerrar menú">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col items-center justify-center flex-1 gap-8">
+      <a href="#sobre" class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Sobre mí</a>
+      <a href="#sesiones" class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Sesiones</a>
+      <a href="#beneficios" class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Beneficios</a>
+      <a href="#experiencias"
+        class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Experiencias</a>
+      <a href="#faq" class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Dudas</a>
+      <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20sonoterapia%20%F0%9F%99%8F"
+        target="_blank" rel="noopener" class="btn-primary mt-4">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        Reserva tu sesión
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ====================================
+       HERO SECTION
+       ==================================== -->
+  <section id="hero" class="relative min-h-screen flex items-center bg-warm-white pt-20 overflow-hidden">
+    <!-- Transparent Background Image for Desktop -->
+    <div class="absolute inset-0 z-0 opacity-15 mix-blend-multiply hidden md:block">
+      <img src="/assets/cuencos-blancos.png" alt="Fondo Sonoterapia"
+        class="w-full h-full object-cover object-center translate-x-1/4 scale-110">
+      <!-- Gradient mask to blend with left side text -->
+      <div class="absolute inset-0 bg-gradient-to-r from-warm-white via-warm-white/60 to-transparent"></div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="absolute top-20 right-10 w-72 h-72 rounded-full bg-sage-50 opacity-40 blur-3xl animate-pulse-soft z-0">
+    </div>
+    <div
+      class="absolute bottom-20 left-10 w-56 h-56 rounded-full bg-gold-light opacity-20 blur-3xl animate-pulse-soft z-0"
+      style="animation-delay: 2s;"></div>
+
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <!-- Text Content -->
+      <div class="text-center md:text-left">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sage-50 text-olive text-sm font-medium mb-8">
+          <span class="w-2 h-2 rounded-full bg-sage animate-pulse"></span>
+          Sonoterapia
+        </div>
+
+        <h1 class="heading-serif text-4xl sm:text-5xl lg:text-6xl mb-6 leading-tight">
+          Sanación a través del
+          <span class="block italic text-olive">sonido.</span>
+        </h1>
+
+        <p class="text-lg text-text-body leading-relaxed max-w-lg mx-auto md:mx-0 mb-10">
+          Relaja, equilibra y armoniza tu cuerpo y mente a través de vibraciones sonoras ancestrales con cuencos
+          tibetanos y de cuarzo.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20sonoterapia%20%F0%9F%99%8F"
+            target="_blank" rel="noopener" class="btn-primary justify-center">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Reserva tu sesión
+          </a>
+          <a href="#sesiones" class="btn-secondary justify-center">
+            Ver sesiones
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hidden md:flex justify-center items-center relative">
+        <div class="relative">
+          <!-- Decorative circle -->
+          <div
+            class="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-sage-50 via-cream to-gold-light/40 flex items-center justify-center animate-float">
+            <div
+              class="w-64 h-64 lg:w-72 lg:h-72 rounded-full relative flex items-center justify-center border-4 border-gold/40 overflow-hidden shadow-2xl">
+              <!-- image background -->
+              <img src="/assets/cuencos-blancos.png"
+                class="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-90 scale-110"
+                alt="cuencos">
+              <!-- inner content overlay -->
+              <div class="absolute inset-0 bg-gradient-to-br from-sage/40 to-olive/30 mix-blend-multiply"></div>
+            </div>
+          </div>
+          <!-- Small floating elements -->
+          <div
+            class="absolute -top-4 right-4 w-12 h-12 rounded-full bg-gold-light/40 flex items-center justify-center animate-float"
+            style="animation-delay: 1s;">
+            <span class="text-xl">✨</span>
+          </div>
+          <div
+            class="absolute bottom-8 -left-6 w-10 h-10 rounded-full bg-sage-light/50 flex items-center justify-center animate-float"
+            style="animation-delay: 3s;">
+            <span class="text-lg">🕉️</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+      <span class="text-xs text-text-muted tracking-widest uppercase">Descubre</span>
+      <svg class="w-5 h-5 text-text-muted animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ====================================
+       SOBRE LA TERAPEUTA
+       ==================================== -->
+  <section id="sobre" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <!-- Image Side -->
+        <div class="reveal flex justify-center">
+          <div class="relative">
+            <div class="w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden relative z-10 shadow-xl bg-sage-50">
+              <img src="/assets/fanny-perfil.png" alt="Fanny Villagra"
+                class="w-full h-full object-cover grayscale-[20%] sepia-[10%]">
+            </div>
+            <!-- Decorative corner -->
+            <div class="absolute -bottom-4 -right-4 w-20 h-20 border-2 border-gold-light rounded-2xl"></div>
+            <div class="absolute -top-3 -left-3 w-6 h-6 rounded-full bg-gold-light/60"></div>
+          </div>
+        </div>
+
+        <!-- Text Side -->
+        <div class="reveal reveal-delay-1">
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase block mb-4">Sobre la terapeuta</span>
+          <div class="gold-divider mb-8"></div>
+
+          <h2 class="heading-serif text-3xl md:text-4xl mb-6">
+            Fanny
+            <span class="block text-olive italic">Villagra</span>
+          </h2>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-sage-50 flex items-center justify-center text-sm">🔔</span>
+              <span class="text-text-body font-medium">Sonoterapeuta</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-sage-50 flex items-center justify-center text-sm">✋</span>
+              <span class="text-text-body font-medium">Maestra de Reiki</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-sage-50 flex items-center justify-center text-sm">🌿</span>
+              <span class="text-text-body font-medium">Terapeuta Holística Complementaria</span>
+            </div>
+          </div>
+
+          <p class="text-text-body leading-relaxed text-base mb-4">
+            Tengo una profunda conexión con el bienestar y la sanación a través de las vibraciones sonoras. A lo largo
+            de los años, he desarrollado una pasión por la Terapia de Sonidos, un campo que considero profundamente
+            transformador, ya que combina la salud integral con el poder curativo del sonido.
+          </p>
+          <details class="group">
+            <summary
+              class="flex items-center gap-2 cursor-pointer text-olive font-medium hover:text-olive-dark transition-colors list-none select-none">
+              <span class="group-open:hidden">Leer más sobre mi camino</span>
+              <span class="hidden group-open:inline">Mostrar menos</span>
+              <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="mt-4 space-y-4 text-text-body leading-relaxed text-base">
+              <p>
+                En mi trayectoria, he explorado diversas herramientas como el Reiki, la Canalización, la Gemoterapia y
+                la Radiestesia. Esto me ha permitido desarrollar una comprensión holística de cómo el sonido puede
+                influir en la mente, el cuerpo y las emociones.
+              </p>
+              <p>
+                Ser Terapeuta Holística es acompañar a las personas en su camino de sanación desde una visión integral,
+                considerando el <strong class="text-text-dark font-medium">cuerpo, la mente, las emociones y el
+                  espíritu</strong> como un todo interconectado. No se trata solo de aliviar un síntoma, sino de
+                comprender su raíz profunda y transformar la energía que lo sostiene.
+              </p>
+              <p>
+                Me considero una persona empática, con gran capacidad para escuchar y conectar a nivel energético. En
+                cada sesión, mi enfoque es crear un espacio seguro donde puedas liberarte de tensiones, reducir el
+                estrés y promover tu bienestar general utilizando cuencos tibetanos, de cuarzo, campanas y más.
+              </p>
+              <p>
+                Ser Terapeuta Holística es un compromiso con la Vida, con la escucha del alma y con la certeza de que
+                dentro de cada persona habita la capacidad de transformarse.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================
+       NUESTRAS SESIONES
+       ==================================== -->
+  <section id="sesiones" class="py-24 md:py-32 bg-warm-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase block mb-4">Nuestras sesiones</span>
+        <div class="gold-divider mx-auto mb-8"></div>
+        <h2 class="heading-serif text-3xl md:text-4xl mb-4">
+          Elige tu camino de
+          <span class="italic text-olive">sanación</span>
+        </h2>
+        <p class="text-text-body max-w-lg mx-auto">
+          Cada sesión está diseñada para llevarte a un estado profundo de relajación y equilibrio energético.
+        </p>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+        <!-- Card 1: Sonoterapia -->
+        <div class="service-card reveal reveal-delay-1 flex flex-col h-full">
+          <div class="flex items-start justify-between mb-6">
+            <span class="text-4xl">🔔</span>
+            <span class="promo-badge">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              Promo La Florida
+            </span>
+          </div>
+
+          <h3 class="heading-serif text-2xl mb-2">Sonoterapia</h3>
+          <p class="text-text-muted text-sm mb-5">Sesión individual · 1 hora</p>
+
+          <details class="group mb-8">
+            <summary
+              class="flex items-center justify-between cursor-pointer text-olive text-sm font-medium hover:text-olive-dark transition-colors list-none select-none bg-sage-50 px-4 py-3 rounded-lg">
+              <span>¿Qué incluye la sesión?</span>
+              <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="mt-3 space-y-3 text-text-body text-sm px-4 pb-2">
+              <p><strong class="text-text-dark">1. Bienvenida (10 min):</strong> Diálogo sobre tu estado y
+                establecimiento de la intención.</p>
+              <p><strong class="text-text-dark">2. Sonoterapia (40 min):</strong> Aplicación de frecuencias sobre
+                chakras y masajes sonoros corporales.</p>
+              <p><strong class="text-text-dark">3. Cierre (10 min):</strong> Retroalimentación y recomendaciones para
+                mantener el bienestar.</p>
+            </div>
+          </details>
+
+          <!-- Pricing -->
+          <div class="border-t border-sage-light/30 pt-6 space-y-5 flex-grow flex flex-col justify-end">
+            <!-- Individual -->
+            <div class="flex flex-col gap-1">
+              <div class="flex items-end justify-between">
+                <div>
+                  <span class="block text-sm font-medium text-text-dark">1 Persona</span>
+                  <span class="text-xs text-text-muted">Promo Inauguración (La Florida)</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-text-muted line-through text-sm mr-2">$20.000</span>
+                  <span class="heading-serif text-2xl text-olive">$15.000</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dual -->
+            <div class="flex flex-col gap-1">
+              <div class="flex items-end justify-between">
+                <div>
+                  <span class="block text-sm font-medium text-text-dark">2 Personas</span>
+                </div>
+                <div class="text-right">
+                  <span class="heading-serif text-xl text-olive">$17.000 <span
+                      class="text-xs text-text-muted font-sans font-normal">p/p</span></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pack 4 -->
+            <div class="flex items-center justify-between bg-gold-light/10 px-3 py-2.5 rounded">
+              <span class="text-xs font-semibold text-gold uppercase tracking-wider">Pack 4 Sesiones</span>
+              <span class="text-sm font-medium text-text-dark">$50.000 <span
+                  class="text-xs text-text-muted font-normal">(Promo)</span></span>
+            </div>
+
+            <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20Sonoterapia%20%F0%9F%99%8F"
+              target="_blank" rel="noopener" class="btn-primary w-full justify-center text-sm mt-4">
+              <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Reservar Sonoterapia
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Sonoterapia + Reiki -->
+        <div class="service-card reveal reveal-delay-2 flex flex-col h-full">
+          <div class="flex items-start justify-between mb-6">
+            <span class="text-4xl">🔔✋</span>
+            <span class="promo-badge">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              Promo La Florida
+            </span>
+          </div>
+
+          <h3 class="heading-serif text-2xl mb-2">Sonoterapia y Reiki</h3>
+          <p class="text-text-muted text-sm mb-5">Sesión completa · 1 hora 30 min</p>
+
+          <details class="group mb-8">
+            <summary
+              class="flex items-center justify-between cursor-pointer text-olive text-sm font-medium hover:text-olive-dark transition-colors list-none select-none bg-sage-50 px-4 py-3 rounded-lg">
+              <span>¿Qué incluye la sesión?</span>
+              <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="mt-3 space-y-3 text-text-body text-sm px-4 pb-2">
+              <p><strong class="text-text-dark">1. Preparación (10 min):</strong> Diagnóstico energético con péndulo.
+              </p>
+              <p><strong class="text-text-dark">2. Reiki (30 min):</strong> Canalización para restaurar el flujo y
+                eliminar bloqueos energeticos.</p>
+              <p><strong class="text-text-dark">3. Sonoterapia (40 min):</strong> Masaje sonoro vibratorio profundo con
+                cuencos.</p>
+              <p><strong class="text-text-dark">4. Cierre (10 min):</strong> Retroalimentación y recomendaciones para
+                sostener la energía.</p>
+            </div>
+          </details>
+
+          <!-- Pricing -->
+          <div class="border-t border-sage-light/30 pt-6 space-y-5 flex-grow flex flex-col justify-end">
+            <!-- Individual -->
+            <div class="flex flex-col gap-1">
+              <div class="flex items-end justify-between">
+                <div>
+                  <span class="block text-sm font-medium text-text-dark">1 Persona</span>
+                  <span class="text-xs text-text-muted">Promo Inauguración</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-text-muted line-through text-sm mr-2">$25.000</span>
+                  <span class="heading-serif text-2xl text-olive">$20.000</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 Personas -->
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-sm font-medium text-text-dark">2 Personas</span>
+              <span class="heading-serif text-lg text-text-dark font-bold">$17.500 <span
+                  class="text-xs text-text-muted font-normal tracking-wide">p/p</span></span>
+            </div>
+
+            <!-- Pack 4 -->
+            <div class="flex items-center justify-between bg-gold-light/10 px-3 py-2.5 rounded mt-auto">
+              <span class="text-xs font-semibold text-gold uppercase tracking-wider">Pack 4 Sesiones</span>
+              <span class="text-sm font-medium text-text-dark">$65.000 <span
+                  class="text-xs text-text-muted font-normal">(Promo)</span></span>
+            </div>
+
+            <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20Sonoterapia%20%2B%20Reiki%20%F0%9F%99%8F"
+              target="_blank" rel="noopener" class="btn-primary w-full justify-center text-sm mt-4">
+              <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Reservar Sono + Reiki
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====================================
+       CIENCIA E INSTRUMENTOS
+       ==================================== -->
+  <section id="metodologia" class="py-24 md:py-32 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase block mb-4">Metodología</span>
+        <h2 class="heading-serif text-3xl md:text-5xl mb-6">El Poder de las Vibraciones</h2>
+        <div class="gold-divider mx-auto mb-8"></div>
+        <p class="text-text-body leading-relaxed">
+          La Sonoterapia parte de la idea de que los bloqueos emocionales pueden alterar la vibración natural de
+          nuestros centros de energía. Las frecuencias sonoras ayudan a restablecer este equilibrio natural, potenciando
+          la capacidad del cuerpo para sanarse.
+        </p>
+      </div>
+
+      <div class="space-y-4 reveal reveal-delay-1">
+
+        <!-- Accordion 1: El Masaje Vibratorio -->
+        <details class="group bg-cream rounded-2xl border border-sage-light/30 overflow-hidden">
+          <summary
+            class="flex justify-between items-center font-medium cursor-pointer list-none px-6 py-5 text-olive hover:text-olive-dark transition-colors">
+            <span class="heading-serif text-xl">El Masaje Vibratorio con Cuencos</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" class="w-5 h-5" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="text-text-body text-sm px-6 pb-6 pt-2 space-y-4">
+            <p>El cuerpo humano está compuesto por aproximadamente un 70% de agua. Las vibraciones emitidas por los
+              cuencos interactúan con las ondas energéticas del cuerpo estimulando tejidos, órganos y células, liberando
+              tensiones físicas y restableciendo el flujo energético.</p>
+            <p>Numerosas investigaciones científicas respaldan la efectividad de la terapia de sonido como herramienta
+              para reducir la ansiedad, mejorar el estado de ánimo y promover la relajación profunda en ámbitos clínicos
+              y terapéuticos.</p>
+          </div>
+        </details>
+
+        <!-- Accordion 2: Instrumentos -->
+        <details class="group bg-cream rounded-2xl border border-sage-light/30 overflow-hidden">
+          <summary
+            class="flex justify-between items-center font-medium cursor-pointer list-none px-6 py-5 text-olive hover:text-olive-dark transition-colors">
+            <span class="heading-serif text-xl">Instrumentos de Sanación</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" class="w-5 h-5" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="text-text-body text-sm px-6 pb-6 pt-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <strong class="text-text-dark block mb-1">Cuencos de Cuarzo y Tibetanos</strong>
+              Generan frecuencias profundas y expansivas para limpieza energética, relajación espiritual y profunda
+              tranquilidad.
+            </div>
+            <div>
+              <strong class="text-text-dark block mb-1">Tambor Chamánico y Oceánico</strong>
+              Inducen estados de meditación, recrean el oleaje del mar y conectan con el plano físico y espiritual.
+            </div>
+            <div>
+              <strong class="text-text-dark block mb-1">Campanas y Tingshas</strong>
+              Tonos agudos que purifican espacios, despejan energías estancadas y enfocan la atención.
+            </div>
+            <div>
+              <strong class="text-text-dark block mb-1">Koshi Bell y Chimes</strong>
+              Sonidos dulces y etéreos que inducen a la relajación profunda y alinean energías sutiles para meditar.
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================
+       BENEFICIOS
+       ==================================== -->
+  <section id="beneficios" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-5xl mx-auto px-6">
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase block mb-4">Beneficios</span>
+        <div class="gold-divider mx-auto mb-8"></div>
+        <h2 class="heading-serif text-3xl md:text-4xl mb-4">
+          Transforma tu
+          <span class="italic text-olive">bienestar</span>
+        </h2>
+        <p class="text-text-body max-w-lg mx-auto">
+          Las vibraciones sonoras actúan en todos los niveles de tu ser, promoviendo una sanación integral.
+        </p>
+      </div>
+
+      <!-- Benefits Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+
+        <!-- Benefit 1 -->
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-icon">
+            <svg class="w-7 h-7 text-olive" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+            </svg>
+          </div>
+          <h3 class="heading-serif text-lg mb-2">Reduce el dolor</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Alivia la tensión muscular y disminuye dolores crónicos.
+          </p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="benefit-card reveal reveal-delay-2">
+          <div class="benefit-icon">
+            <svg class="w-7 h-7 text-olive" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+            </svg>
+          </div>
+          <h3 class="heading-serif text-lg mb-2">Menos estrés</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Disminuye los niveles de estrés y ansiedad de forma
+            natural.</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="benefit-card reveal reveal-delay-3">
+          <div class="benefit-icon">
+            <svg class="w-7 h-7 text-olive" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+          </div>
+          <h3 class="heading-serif text-lg mb-2">Mejor sueño</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Mejora la calidad del sueño y promueve un descanso
+            reparador.</p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="benefit-card reveal reveal-delay-4">
+          <div class="benefit-icon">
+            <svg class="w-7 h-7 text-olive" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+            </svg>
+          </div>
+          <h3 class="heading-serif text-lg mb-2">Conexión interior</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Facilita la conexión con tu yo interior y tu esencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================
+       CTA SECTION
+       ==================================== -->
+  <section class="py-20 bg-warm-white">
+    <div class="max-w-3xl mx-auto px-6 text-center reveal">
+      <div class="gold-divider-wide mx-auto mb-10"></div>
+      <h2 class="heading-serif text-3xl md:text-4xl mb-4">
+        Tu viaje de sanación
+        <span class="italic text-olive block">comienza aquí</span>
+      </h2>
+      <p class="text-text-body max-w-md mx-auto mb-10 leading-relaxed">
+        Reserva tu sesión hoy y descubre el poder transformador de las vibraciones sonoras.
+      </p>
+      <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20sonoterapia%20%F0%9F%99%8F"
+        target="_blank" rel="noopener" class="btn-primary text-lg !py-4 !px-10 inline-flex">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        Reserva tu sesión
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ====================================
+       TESTIMONIOS
+       ==================================== -->
+  <section id="experiencias" class="py-24 md:py-32 bg-warm-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase block mb-4">Experiencias</span>
+        <div class="gold-divider mx-auto mb-8"></div>
+        <h2 class="heading-serif text-3xl md:text-4xl mb-4">
+          Testimonios de
+          <span class="italic text-olive">sanación</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div
+          class="service-card reveal reveal-delay-1 p-8 text-center bg-white shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex justify-center gap-1 mb-6 text-gold text-lg">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="text-text-body italic mb-6">"Llegué con mucho dolor de espalda y estrés acumulado. La sesión de
+            sonoterapia con Fanny fue un viaje hermoso. Salí renovada y ligera."</p>
+          <p class="text-text-dark font-semibold text-sm">— Camila V.</p>
+        </div>
+        <div
+          class="service-card reveal reveal-delay-2 p-8 text-center bg-white shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex justify-center gap-1 mb-6 text-gold text-lg">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="text-text-body italic mb-6">"Nunca había probado cuencos y me sorprendió el impacto. Pude
+            desconectar la mente y descansar profundo como hace años no lo hacía."</p>
+          <p class="text-text-dark font-semibold text-sm">— Diego A.</p>
+        </div>
+        <div
+          class="service-card reveal reveal-delay-3 p-8 text-center bg-white shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex justify-center gap-1 mb-6 text-gold text-lg">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="text-text-body italic mb-6">"Fanny tiene una maravillosa energía. La combinación de cuencos y reiki
+            desbloqueó emociones que llevaba guardando hace tiempo. Volveré sin duda."</p>
+          <p class="text-text-dark font-semibold text-sm">— Macarena R.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================
+       PREGUNTAS FRECUENTES
+       ==================================== -->
+  <section id="faq" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase block mb-4">Dudas comunes</span>
+        <div class="gold-divider mx-auto mb-8"></div>
+        <h2 class="heading-serif text-3xl md:text-4xl mb-4">
+          Preguntas
+          <span class="italic text-olive">frecuentes</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4 reveal reveal-delay-1">
+        <details
+          class="group bg-white rounded-2xl border border-sage-light/30 shadow-sm overflow-hidden open:ring-1 open:ring-sage/20">
+          <summary
+            class="flex justify-between items-center font-serif text-lg text-text-dark cursor-pointer p-6 list-none hover:bg-sage-50/50 transition-colors">
+            ¿Cómo funciona el masaje vibratorio?
+            <span class="transition group-open:rotate-180">
+              <svg class="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div class="text-text-body leading-relaxed px-6 pb-6 pt-2">
+            Las vibraciones de los cuencos interactúan con las ondas energéticas del cuerpo (compuesto en un 70% por
+            agua), estimulando las células y liberando bloqueos.
+          </div>
+        </details>
+        <details
+          class="group bg-white rounded-2xl border border-sage-light/30 shadow-sm overflow-hidden open:ring-1 open:ring-sage/20">
+          <summary
+            class="flex justify-between items-center font-serif text-lg text-text-dark cursor-pointer p-6 list-none hover:bg-sage-50/50 transition-colors">
+            ¿Qué instrumentos se utilizan?
+            <span class="transition group-open:rotate-180">
+              <svg class="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div class="text-text-body leading-relaxed px-6 pb-6 pt-2">
+            Utilizamos cuencos de cuarzo y tibetanos, tambor chamánico, campanas, tingshas, koshi bells y cortinillas,
+            cada uno con un propósito específico de sanación.
+          </div>
+        </details>
+        <details
+          class="group bg-white rounded-2xl border border-sage-light/30 shadow-sm overflow-hidden open:ring-1 open:ring-sage/20">
+          <summary
+            class="flex justify-between items-center font-serif text-lg text-text-dark cursor-pointer p-6 list-none hover:bg-sage-50/50 transition-colors">
+            ¿Tiene efectos secundarios?
+            <span class="transition group-open:rotate-180">
+              <svg class="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div class="text-text-body leading-relaxed text-sm px-6 pb-6 pt-2 space-y-4">
+            <p>Tanto el Reiki como la Sonoterapia son prácticas no invasivas y generalmente seguras, por lo que no
+              suelen presentar efectos secundarios graves. Sin embargo, algunas personas pueden experimentar reacciones
+              leves o temporales como parte del proceso de ajuste energético o desintoxicación del cuerpo.</p>
+
+            <strong class="block text-text-dark mt-4">Efectos más comunes:</strong>
+            <ul class="list-disc pl-5 space-y-2">
+              <li><strong>Liberación emocional:</strong> Puedes sentir emociones intensas, como tristeza, llanto o
+                euforia, ya que se liberan bloqueos acumulados.</li>
+              <li><strong>Sensación de fatiga o cansancio:</strong> Es común sentirse algo agotado tras la sesión debido
+                al trabajo energético profundo. Suele desaparecer después de descansar.</li>
+              <li><strong>Síntomas de desintoxicación y ajuste:</strong> Dolores de cabeza leves, mareos ocasionales o
+                aumento en la necesidad de orinar debido a la eliminación de toxinas o al uso de frecuencias muy bajas
+                de los cuencos.</li>
+            </ul>
+
+            <strong class="block text-text-dark mt-4">Recomendaciones posteriores:</strong>
+            <ul class="list-disc pl-5 space-y-2">
+              <li><strong>Hidratación y Descanso:</strong> Beber abundante agua y permitir que el cuerpo integre los
+                cambios descansando lo suficiente.</li>
+              <li><strong>Espacio emocional:</strong> Acepta las emociones que surjan, ya que forman parte de tu proceso
+                natural de sanación y equilibrio.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================
+       FOOTER
+       ==================================== -->
+  <footer class="bg-text-dark py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <!-- Brand -->
+        <div>
+          <a href="#top" class="inline-block mb-6 -ml-4">
+            <img src="/assets/logo-ecos-blanco-257x120.png" alt="ëcos - sonidos que sanan Logo"
+              class="h-10 w-auto object-contain">
+          </a>
+          <p class="text-warm-gray text-sm leading-relaxed">
+            Sanación a través del sonido. Sesiones de sonoterapia y reiki en La Florida, Santiago de Chile.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-gold text-sm font-semibold tracking-widest uppercase mb-4">Contacto</h4>
+          <ul class="space-y-3 text-warm-gray text-sm">
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              La Florida, Santiago — A domicilio
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ecos.sonoterapia" target="_blank" rel="noopener"
+                class="flex items-center gap-3 hover:text-sage-light transition-colors">
+                <svg class="w-4 h-4 text-sage" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                </svg>
+                @ecos.sonoterapia
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/fannyvillagra/" target="_blank" rel="noopener"
+                class="flex items-center gap-3 hover:text-sage-light transition-colors">
+                <svg class="w-4 h-4 text-sage" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                </svg>
+                @fannyvillagra
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-gold text-sm font-semibold tracking-widest uppercase mb-4">Navegación</h4>
+          <ul class="space-y-3 text-warm-gray text-sm">
+            <li><a href="#sobre" class="hover:text-sage-light transition-colors">Sobre la terapeuta</a></li>
+            <li><a href="#sesiones" class="hover:text-sage-light transition-colors">Nuestras sesiones</a></li>
+            <li><a href="#beneficios" class="hover:text-sage-light transition-colors">Beneficios</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-warm-gray/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-warm-gray/60 text-xs">
+          © 2026 ëcos - sonidos que sanan. Todos los derechos reservados.
+        </p>
+        <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20sonoterapia%20%F0%9F%99%8F"
+          target="_blank" rel="noopener"
+          class="inline-flex items-center gap-2 text-sage text-sm hover:text-sage-light transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

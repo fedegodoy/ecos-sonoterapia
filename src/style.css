@@ -1,0 +1,321 @@
+@import "tailwindcss";
+
+/* ============================================
+   ECOS SONOTERAPIA — Design System
+   ============================================ */
+
+@theme {
+  /* Color Palette */
+  --color-sage: #5aa26d;
+  --color-sage-light: #8bc29a;
+  /* Lighter version of the brand green */
+  --color-sage-50: #eaf3ed;
+  --color-olive: #5aa26d;
+  /* Brand Green */
+  --color-olive-dark: #3b744a;
+  /* Darker Brand Green */
+  --color-warm-gray: #A69F98;
+  --color-warm-gray-light: #D5CEC9;
+  --color-cream: #f2f2f2;
+  /* Brand White/Off-white */
+  --color-warm-white: #f2f2f2;
+  /* Brand White/Off-white */
+  --color-gold: #cdb640;
+  /* Brand Gold */
+  --color-gold-light: #e6d88c;
+  /* Lighter Gold */
+  --color-text-dark: #363636;
+  /* Brand Dark Gray */
+  --color-text-body: #5A554E;
+  --color-text-muted: #8A847D;
+
+  /* Font Families */
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-body);
+  background-color: var(--color-warm-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+.heading-serif {
+  font-family: var(--font-serif);
+  color: var(--color-text-dark);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+/* ============================================
+   Gold Divider
+   ============================================ */
+
+.gold-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+.gold-divider-wide {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold-light), var(--color-gold), var(--color-gold-light), transparent);
+}
+
+/* ============================================
+   CTA Button
+   ============================================ */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, var(--color-olive), var(--color-olive-dark));
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(107, 127, 59, 0.25);
+  letter-spacing: 0.02em;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(107, 127, 59, 0.35);
+  background: linear-gradient(135deg, var(--color-olive-dark), var(--color-olive));
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  border: 2px solid var(--color-gold);
+  color: var(--color-olive-dark);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-secondary:hover {
+  background: var(--color-gold);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(197, 165, 114, 0.3);
+}
+
+/* ============================================
+   Service Card
+   ============================================ */
+
+.service-card {
+  background: white;
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(156, 175, 136, 0.15);
+  box-shadow: 0 4px 20px rgba(45, 42, 38, 0.04);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(45, 42, 38, 0.1);
+  border-color: var(--color-sage);
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-sage), var(--color-gold));
+}
+
+.promo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.375rem 1rem;
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ============================================
+   Benefit Card
+   ============================================ */
+
+.benefit-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(156, 175, 136, 0.1);
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(45, 42, 38, 0.08);
+  border-color: var(--color-sage-light);
+}
+
+.benefit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--color-sage-50);
+  margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  background: var(--color-sage-light);
+  transform: scale(1.05);
+}
+
+/* ============================================
+   Scroll Animations
+   ============================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+/* ============================================
+   Floating Animation (Hero)
+   ============================================ */
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 4s ease-in-out infinite;
+}
+
+/* ============================================
+   Navbar
+   ============================================ */
+
+.navbar {
+  backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(253, 252, 250, 0.85);
+  transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 20px rgba(45, 42, 38, 0.08);
+}
+
+/* ============================================
+   Mobile Menu
+   ============================================ */
+
+.mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* ============================================
+   Section Separator
+   ============================================ */
+
+.section-wave {
+  position: relative;
+}
+
+.section-wave::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--color-cream);
+  clip-path: ellipse(60% 100% at 50% 100%);
+}
