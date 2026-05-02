@@ -5,7 +5,7 @@
 
 ## 1. El Proyecto y Nuestro Objetivo
 Ecos Sonoterapia es un emprendimiento holístico de Fanny Villagra (La Florida, Santiago de Chile).
-Nuestra métrica de éxito es la **conversión directa a mensajes de WhatsApp**. 
+Nuestra métrica de éxito es la **conversión directa a mensajes de WhatsApp**.
 El objetivo actual (ROADMAP 1) es una **estrategia agresiva de posicionamiento SEO Local y GEO** para dominar las búsquedas "a domicilio" y "Santiago", aparte de "La Florida".
 
 ---
@@ -13,21 +13,27 @@ El objetivo actual (ROADMAP 1) es una **estrategia agresiva de posicionamiento S
 ## 2. Lo Que Ya Hicimos (Completado y Desplegado)
 
 ### Sesión 1 — SEO técnico base
-1. **Auditoría y Replanteo Geográfico:** Enfoque SEO sobre "Santiago" y "Atención a Domicilio" (no solo "La Florida").
-2. **GEO/SEO para IA:** `public/llms.txt`, `public/robots.txt` abierto a GPTBot/ClaudeBot, JSON-LD Schema con `areaServed`.
-3. **Core Web Vitals:** Eliminación de PNGs pesados (3MB → KBs), conversión a WebP con nombres SEO.
-4. **Arquitectura en Racimo SEO:** Páginas `/sonoterapia.html`, `/reiki.html` + esqueleto de `/blog/`.
-5. **Google Business Profile:** Guía paso a paso en `INFORMES SEO/Guia_Alta_Google_Business_Ecos.md`.
+1. Replanteo geográfico: enfoque sobre "Santiago" y "Atención a Domicilio".
+2. GEO/SEO para IA: `public/llms.txt`, `public/robots.txt` abierto a GPTBot/ClaudeBot, JSON-LD Schema con `areaServed`.
+3. Core Web Vitals: eliminación de PNGs pesados, conversión a WebP con nombres SEO.
+4. Arquitectura en Racimo SEO: páginas `/sonoterapia`, `/reiki` + esqueleto de `/blog/`.
+5. Guía Google Business Profile en `INFORMES SEO/Guia_Alta_Google_Business_Ecos.md`.
 
-### Sesión 2 — Imágenes reales + nav dropdown
-6. **Imágenes reales retocadas por Fanny** procesadas desde `ACTUALIZACION/` con scripts en `optimize-images/`:
-   - `optimize-ecos.mjs` → genera AVIF + JPG con nombres SEO para todas las páginas (15 imágenes × 2 formatos)
-   - `geotag-jpgs.mjs` → inyecta EXIF GPS (La Florida: -33.5212, -70.5985) en todos los JPG para Google Business Profile
-   - Todas las imágenes están en `public/assets/` con `<picture>` (AVIF + JPG fallback) reemplazando los placeholders
-7. **Nuevas páginas:** `/reiki-online.html`, `/sonoterapia-acuatica.html`, `/ceremonias.html` con contenido y hero real
-8. **Nav dropdown "Servicios":** Desktop con hover dropdown (CSS puro, `group-hover` Tailwind) + mobile con lista expandida. La página activa se resalta en olive. Disponible en las 6 páginas.
-9. **Hero H1:** Ajustado a 2 líneas: *Sonoterapia y Reiki / en Santiago.*
-10. **Card SonoReiki:** Ícono cambiado de 🔔✋ → solo ✋
+### Sesión 2 — Imágenes reales + nav + fixes producción
+6. **15 imágenes reales** procesadas desde `ACTUALIZACION/` con scripts en `optimize-images/`:
+   - `optimize-ecos.mjs` → AVIF + JPG con nombres SEO
+   - `geotag-jpgs.mjs` → script de geotagging (descartado: corrompía EXIF). JPGs en producción son limpios sin EXIF.
+   - Todas en `public/assets/` con `<picture>` (AVIF + JPG fallback).
+7. **Páginas nuevas:** `/reiki-online`, `/sonoterapia-acuatica`, `/ceremonias` con contenido y hero real.
+8. **Nav dropdown "Servicios":** desktop hover (CSS puro `group-hover`) + mobile lista expandida. Página activa resaltada en olive. En las 6 páginas.
+9. **Hero H1:** 2 líneas — *Sonoterapia y Reiki / en Santiago.*
+10. **Card SonoReiki:** ícono 🔔✋ → solo ✋
+11. **Clean URLs:** `vercel.json` con `cleanUrls:true` → `/sonoterapia` en lugar de `/sonoterapia.html`. Canonicals, og:url, JSON-LD y sitemap actualizados.
+12. **Fix crítico Vite:** `vite.config.js` ahora declara las 6 páginas como entry points del build. Sin esto el CSS/JS no cargaba en sub-páginas en producción.
+13. **Schema JSON-LD:** `image` y `priceRange` agregados a las 5 sub-páginas (resuelve warnings de Rich Results Test).
+14. **Google Business Profile:** creado y en proceso de verificación por Google (hasta 5 días). Datos coinciden exacto con la web.
+15. **Rich Results Test `/sonoterapia`:** ✅ 1 elemento válido, `HealthAndBeautyBusiness` detectado sin errores críticos.
+16. **Sitemap** enviado a Google Search Console.
 
 *Todos los cambios en `origin/main` → auto-deploy en Vercel.*
 
@@ -36,29 +42,34 @@ El objetivo actual (ROADMAP 1) es una **estrategia agresiva de posicionamiento S
 ## 3. Estructura de Páginas Actuales
 | Página | Ruta | Estado |
 |---|---|---|
-| Home (landing) | `/` → `index.html` | ✅ completa |
-| Sonoterapia | `/sonoterapia.html` | ✅ completa |
-| SonoReiki | `/reiki.html` | ✅ completa |
-| Reiki Online Nocturno | `/reiki-online.html` | ✅ completa |
-| Sonoterapia Acuática | `/sonoterapia-acuatica.html` | ✅ completa |
-| Ceremonias Holísticas | `/ceremonias.html` | ✅ completa |
-| Blog índice | `/blog/index.html` | ⚠️ esqueleto sin contenido |
-| Blog post 1 | `/blog/beneficios-cuencos-tibetanos.html` | ⚠️ esqueleto sin contenido |
+| Home | `/` | ✅ completa |
+| Sonoterapia | `/sonoterapia` | ✅ completa |
+| SonoReiki | `/reiki` | ✅ completa |
+| Reiki Online Nocturno | `/reiki-online` | ✅ completa |
+| Sonoterapia Acuática | `/sonoterapia-acuatica` | ✅ completa |
+| Ceremonias Holísticas | `/ceremonias` | ✅ completa |
+| Blog índice | `/blog/` | ⚠️ esqueleto sin contenido |
+| Blog post 1 | `/blog/beneficios-cuencos-tibetanos` | ⚠️ esqueleto sin contenido |
 
 ---
 
 ## 4. Scripts Disponibles en `optimize-images/`
 - `optimize-ecos.mjs` — regenera AVIF+JPG desde `ACTUALIZACION/` con MAPA de nombres SEO
-- `geotag-jpgs.mjs` — inyecta GPS EXIF La Florida en todos los JPG de `public/assets/`
-- `README.md` — instrucciones de uso generales
+- `geotag-jpgs.mjs` — script de geotagging (no usar: corrompe EXIF con caracteres especiales)
 
 ---
 
 ## 5. Próximos Pasos (Sesión 3)
 
-- [ ] **Sitemap XML actualizado:** Agregar las 3 nuevas páginas (`/reiki-online.html`, `/sonoterapia-acuatica.html`, `/ceremonias.html`) y reenviar a Google Search Console.
-- [ ] **Google Business Profile:** Verificar/avanzar el alta + subir fotos JPG geotaggeadas.
-- [ ] **Google Rich Results Test:** Validar Schema JSON-LD en las páginas nuevas.
-- [ ] **Clean URLs Vercel (opcional):** `vercel.json` con rewrites para servir `/sonoterapia` en lugar de `/sonoterapia.html`.
-- [ ] **Blog — contenido real:** Redactar primeros 2-3 posts SEO del dolor (insomnio, estrés, ansiedad).
-- [ ] **Analytics/Conversión:** Verificar que cada botón WhatsApp tenga texto de referencia distinto por página para medir intención (ya tiene textos diferenciados por página, confirmar que están todos bien).
+- [ ] **Blog — contenido real:** Redactar primeros 2-3 posts SEO del dolor: insomnio, estrés, ansiedad. Son los que más tráfico orgánico generan a largo plazo.
+- [ ] **Google Business Profile:** Esperar verificación (~5 días). Una vez activo: agregar horario, servicios con precios, y publicación inicial.
+- [ ] **Fotos GBP:** Subir desde `public/assets/` en este orden: `terapeuta-reiki-sonoterapia-fanny.jpg` (portada), `hero-sonoterapia-cuencos-santiago.jpg`, `experiencia-sonoterapia-santiago.jpg`, `sonoreiki-fanny-villagra-santiago.jpg`, `ceremonias-holisticas-santiago.jpg`.
+
+---
+
+## 6. Ideas para Optimizar Más (backlog)
+- **Google Ads locales** (cuando el GBP esté verificado): campaña pequeña de $5.000-$10.000 CLP/día para "sonoterapia Santiago" y "reiki a domicilio Santiago".
+- **Reseñas Google:** Pedirle a clientas actuales que dejen reseña en el GBP — es el factor #1 de ranking local.
+- **WhatsApp Business:** Migrar el número a WA Business para tener perfil verificado, catálogo de servicios y respuestas automáticas.
+- **Instagram vinculado al GBP:** Conectar `@ecos.sonoterapia` al perfil de Google Business.
+- **Blog:** Primeros posts sugeridos: "Qué es la sonoterapia y para qué sirve", "Beneficios del Reiki para el insomnio", "Sonoterapia a domicilio en Santiago: qué esperar".
