@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Ecos Sonoterapia | Cuencos Tibetanos y Reiki en Santiago y La Florida</title>
+  <title>Ecos Sonoterapia | Cuencos Tibetanos, Reiki y Ceremonias en Santiago</title>
   <meta name="description"
-    content="Sesiones de sonoterapia con cuencos tibetanos y reiki. Atención en La Florida y servicio a domicilio en todo Santiago de Chile. Sana y relaja tu cuerpo y mente.">
+    content="Sonoterapia, SonoReiki, Reiki online, Sonoterapia Acuática y Ceremonias holísticas en La Florida y a domicilio en todo Santiago de Chile. Sana y armoniza cuerpo, mente y energía con Fanny Villagra.">
   <meta name="keywords"
-    content="sonoterapia, cuencos tibetanos, reiki, terapia holística, a domicilio, La Florida, Santiago, Chile, sanación sonora, relajación, bienestar">
+    content="sonoterapia, cuencos tibetanos, reiki, sonoreiki, reiki online, sonoterapia acuatica, ceremonias holisticas, terapia holística, a domicilio, La Florida, Santiago, Chile, sanación sonora, círculo de mujeres, baby shower holístico">
   <meta name="author" content="Fanny Villagra">
   <meta name="google-site-verification" content="pSQbPXoAx2hrrticqFrmgmDN4T_0LThAkUf4lVyg1ek" />
 
@@ -49,7 +49,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["HealthAndBeautyBusiness", "Service"],
+    "@type": "HealthAndBeautyBusiness",
     "name": "Ecos Sonoterapia",
     "image": "https://ecos-sonoterapia.cl/assets/logo-ecos-verde.png",
     "@id": "https://ecos-sonoterapia.cl/",
@@ -64,19 +64,67 @@
       "addressCountry": "CL"
     },
     "areaServed": [
-      {
-        "@type": "City",
-        "name": "Santiago"
-      },
-      {
-        "@type": "City",
-        "name": "La Florida"
-      }
+      { "@type": "City", "name": "Santiago" },
+      { "@type": "City", "name": "La Florida" }
     ],
-    "description": "Sonoterapia y Reiki a domicilio en todo Santiago y presencial en La Florida. Relaja, equilibra y armoniza tu cuerpo y mente a través de vibraciones sonoras con Fanny Villagra.",
-    "founder": {
-      "@type": "Person",
-      "name": "Fanny Villagra"
+    "description": "Sonoterapia, SonoReiki, Reiki online, Sonoterapia Acuática y Ceremonias holísticas a domicilio en todo Santiago y presencial en La Florida. Relaja, equilibra y armoniza tu cuerpo, mente y energía a través de vibraciones sonoras con Fanny Villagra.",
+    "founder": { "@type": "Person", "name": "Fanny Villagra" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios Ecos Sonoterapia",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sonoterapia",
+            "description": "Sesión individual de sonoterapia con cuencos tibetanos y de cuarzo. 1 hora.",
+            "url": "https://ecos-sonoterapia.cl/sonoterapia.html"
+          },
+          "price": "20000",
+          "priceCurrency": "CLP"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "SonoReiki — Sonoterapia y Reiki",
+            "description": "Sesión completa que combina Reiki y Sonoterapia. 1 hora 30 minutos.",
+            "url": "https://ecos-sonoterapia.cl/reiki.html"
+          },
+          "price": "25000",
+          "priceCurrency": "CLP"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Reiki + Gemoterapia Nocturno Online",
+            "description": "Sesión de Reiki online y nocturna a distancia con gemoterapia. 1 hora.",
+            "url": "https://ecos-sonoterapia.cl/reiki-online.html"
+          },
+          "price": "20000",
+          "priceCurrency": "CLP"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sonoterapia Acuática",
+            "description": "Experiencia que combina sonidos vibracionales con el contacto del agua para una relajación profunda.",
+            "url": "https://ecos-sonoterapia.cl/sonoterapia-acuatica.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ceremonias Holísticas",
+            "description": "Uniones de pareja, bendiciones de camino (baby shower), cumpleaños conscientes, círculos de mujeres, mixtos y de familia.",
+            "url": "https://ecos-sonoterapia.cl/ceremonias.html"
+          }
+        }
+      ]
     }
   }
   </script>
@@ -99,11 +147,39 @@
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-8">
         <a href="#sobre" class="text-sm font-medium text-text-body hover:text-olive transition-colors">Sobre mí</a>
-        <a href="#sesiones" class="text-sm font-medium text-text-body hover:text-olive transition-colors">Sesiones</a>
-        <a href="#beneficios"
-          class="text-sm font-medium text-text-body hover:text-olive transition-colors">Beneficios</a>
-        <a href="#experiencias"
-          class="text-sm font-medium text-text-body hover:text-olive transition-colors">Experiencias</a>
+
+        <!-- Dropdown Servicios -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-sm font-medium text-text-body hover:text-olive transition-colors cursor-pointer">
+            Servicios
+            <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+            <div class="bg-white rounded-2xl shadow-xl border border-sage-light/30 py-2 min-w-[220px]">
+              <a href="/sonoterapia.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-text-body hover:text-olive hover:bg-sage-50 transition-colors">
+                <span class="text-base">🔔</span> Sonoterapia
+              </a>
+              <a href="/reiki.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-text-body hover:text-olive hover:bg-sage-50 transition-colors">
+                <span class="text-base">✋</span> SonoReiki
+              </a>
+              <a href="/reiki-online.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-text-body hover:text-olive hover:bg-sage-50 transition-colors">
+                <span class="text-base">🌙</span> Reiki Online Nocturno
+              </a>
+              <div class="mx-4 my-1 border-t border-sage-light/30"></div>
+              <a href="/sonoterapia-acuatica.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-text-body hover:text-olive hover:bg-sage-50 transition-colors">
+                <span class="text-base">💧</span> Sonoterapia Acuática
+              </a>
+              <a href="/ceremonias.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-text-body hover:text-olive hover:bg-sage-50 transition-colors">
+                <span class="text-base">🕯️</span> Ceremonias Holísticas
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#beneficios" class="text-sm font-medium text-text-body hover:text-olive transition-colors">Beneficios</a>
+        <a href="#experiencias" class="text-sm font-medium text-text-body hover:text-olive transition-colors">Testimonios</a>
         <a href="#faq" class="text-sm font-medium text-text-body hover:text-olive transition-colors">Dudas</a>
         <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20sonoterapia%20%F0%9F%99%8F"
           target="_blank" rel="noopener" class="btn-secondary text-sm !py-2.5 !px-5">
@@ -131,18 +207,23 @@
         </svg>
       </button>
     </div>
-    <div class="flex flex-col items-center justify-center flex-1 gap-8">
+    <div class="flex flex-col items-center justify-center flex-1 gap-6 py-8 overflow-y-auto">
       <a href="#sobre" class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Sobre mí</a>
-      <a href="#sesiones" class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Sesiones</a>
+      <div class="w-full flex flex-col items-center gap-2">
+        <span class="text-xs font-semibold tracking-widest uppercase text-text-muted">Servicios</span>
+        <a href="/sonoterapia.html" class="text-base font-medium text-text-dark hover:text-olive transition-colors">🔔 Sonoterapia</a>
+        <a href="/reiki.html" class="text-base font-medium text-text-dark hover:text-olive transition-colors">✋ SonoReiki</a>
+        <a href="/reiki-online.html" class="text-base font-medium text-text-dark hover:text-olive transition-colors">🌙 Reiki Online Nocturno</a>
+        <a href="/sonoterapia-acuatica.html" class="text-base font-medium text-text-dark hover:text-olive transition-colors">💧 Sonoterapia Acuática</a>
+        <a href="/ceremonias.html" class="text-base font-medium text-text-dark hover:text-olive transition-colors">🕯️ Ceremonias Holísticas</a>
+      </div>
       <a href="#beneficios" class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Beneficios</a>
-      <a href="#experiencias"
-        class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Experiencias</a>
+      <a href="#experiencias" class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Testimonios</a>
       <a href="#faq" class="text-lg font-medium text-text-dark hover:text-olive transition-colors">Dudas</a>
       <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20sonoterapia%20%F0%9F%99%8F"
-        target="_blank" rel="noopener" class="btn-primary mt-4">
+        target="_blank" rel="noopener" class="btn-primary mt-2">
         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg>
         Reserva tu sesión
       </a>
@@ -154,11 +235,13 @@
        HERO SECTION
        ==================================== -->
   <section id="hero" class="relative min-h-screen flex items-center bg-warm-white pt-20 overflow-hidden">
-    <!-- Transparent Background Image for Desktop -->
     <div class="absolute inset-0 z-0 opacity-15 mix-blend-multiply hidden md:block">
-      <img src="/assets/sonoterapia-cuencos-tibetanos-santiago.webp" alt="Sesión de sonoterapia con cuencos tibetanos en Santiago"
-        class="w-full h-full object-cover object-center translate-x-1/4 scale-110">
-      <!-- Gradient mask to blend with left side text -->
+      <picture>
+        <source srcset="/assets/sonoterapia-cuencos-tibetanos-santiago.avif" type="image/avif">
+        <img src="/assets/sonoterapia-cuencos-tibetanos-santiago.jpg"
+             alt="Sonoterapia con cuencos tibetanos en Santiago de Chile"
+             class="w-full h-full object-cover" loading="eager" fetchpriority="high" decoding="async">
+      </picture>
       <div class="absolute inset-0 bg-gradient-to-r from-warm-white via-warm-white/60 to-transparent"></div>
     </div>
 
@@ -179,12 +262,12 @@
         </div>
 
         <h1 class="heading-serif text-4xl sm:text-5xl lg:text-6xl mb-6 leading-tight">
-          Sonoterapia y Reiki en
-          <span class="block italic text-olive">Santiago.</span>
+          Sonoterapia y Reiki
+          <span class="block italic text-olive">en Santiago.</span>
         </h1>
 
         <p class="text-lg text-text-body leading-relaxed max-w-lg mx-auto md:mx-0 mb-10">
-          <strong>En Ecos Sonoterapia (La Florida y a domicilio en todo Santiago)</strong>, utilizamos vibraciones sonoras ancestrales con cuencos tibetanos y de cuarzo para relajar, equilibrar y armonizar tu cuerpo y mente.
+          <strong>Ecos Sonoterapia</strong> es mucho más que una terapia: es un encuentro profundo contigo mismo. A través de la fusión del sonido y la energía, cada sesión es un viaje sensorial y vibracional que te invita a soltar, liberar y florecer desde el interior. <span class="block mt-2 text-text-muted text-base">La Florida y a domicilio en todo Santiago de Chile.</span>
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -210,11 +293,12 @@
             class="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-sage-50 via-cream to-gold-light/40 flex items-center justify-center animate-float">
             <div
               class="w-64 h-64 lg:w-72 lg:h-72 rounded-full relative flex items-center justify-center border-4 border-gold/40 overflow-hidden shadow-2xl">
-              <!-- image background -->
-              <img src="/assets/sonoterapia-cuencos-tibetanos-santiago.webp"
-                class="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-90 scale-110"
-                alt="Cuencos de cuarzo brillantes para sanación y meditación">
-              <!-- inner content overlay -->
+              <picture>
+                <source srcset="/assets/cuencos-tibetanos-cuarzo-fanny-villagra.avif" type="image/avif">
+                <img src="/assets/cuencos-tibetanos-cuarzo-fanny-villagra.jpg"
+                     alt="Cuencos tibetanos y de cuarzo · Sesión de sonoterapia"
+                     class="absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async">
+              </picture>
               <div class="absolute inset-0 bg-gradient-to-br from-sage/40 to-olive/30 mix-blend-multiply"></div>
             </div>
           </div>
@@ -253,9 +337,13 @@
         <!-- Image Side -->
         <div class="reveal flex justify-center">
           <div class="relative">
-            <div class="w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden relative z-10 shadow-xl bg-sage-50">
-              <img src="/assets/terapeuta-reiki-sonoterapia-fanny.webp" alt="Fanny Villagra, terapeuta holística, maestra de Reiki y sonoterapeuta en Santiago"
-                class="w-full h-full object-cover grayscale-[20%] sepia-[10%]">
+            <div class="w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden relative z-10 shadow-xl">
+              <picture>
+                <source srcset="/assets/terapeuta-reiki-sonoterapia-fanny.avif" type="image/avif">
+                <img src="/assets/terapeuta-reiki-sonoterapia-fanny.jpg"
+                     alt="Fanny Villagra · Terapeuta de Reiki y Sonoterapia en Santiago"
+                     class="w-full h-full object-cover" loading="lazy" decoding="async">
+              </picture>
             </div>
             <!-- Decorative corner -->
             <div class="absolute -bottom-4 -right-4 w-20 h-20 border-2 border-gold-light rounded-2xl"></div>
@@ -333,6 +421,52 @@
 
 
   <!-- ====================================
+       ¿CÓMO ES UNA SESIÓN?
+       ==================================== -->
+  <section id="experiencia" class="py-24 md:py-32 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase block mb-4">La experiencia</span>
+        <div class="gold-divider mx-auto mb-8"></div>
+        <h2 class="heading-serif text-3xl md:text-4xl mb-6">
+          ¿Cómo es una
+          <span class="italic text-olive">sesión?</span>
+        </h2>
+      </div>
+
+      <div class="space-y-6 text-text-body leading-relaxed reveal reveal-delay-1">
+        <p>
+          Todo comienza con una breve toma de conciencia, un momento para conectar con tu intención personal y abrir el espacio energético. Luego, las vibraciones de los instrumentos te envuelven suavemente, generando ondas sonoras que penetran cada célula de tu cuerpo. Sentirás cómo el sonido recorre tu campo energético, disolviendo tensiones, equilibrando tus centros de energía (chakras) y llevándote a un estado profundo de calma y presencia.
+        </p>
+        <p>
+          La energía del <strong class="text-text-dark">Reiki</strong> actúa como un canal de luz, potenciando el efecto del sonido y guiando la sanación hacia las áreas donde más lo necesitas. Muchas personas experimentan una sensación de calor, cosquilleo o una profunda paz mientras la energía fluye.
+        </p>
+
+        <h3 class="heading-serif text-2xl mt-10 mb-4 text-text-dark">¿Qué puedes sentir durante y después?</h3>
+        <p>
+          Durante la sesión, puedes experimentar una mezcla de sensaciones: desde una profunda relajación y liviandad, hasta la liberación de emociones o recuerdos que emergen suavemente para ser transformados. Es un proceso natural donde tu cuerpo y tu energía comienzan a reordenarse en armonía.
+        </p>
+        <p>
+          Al finalizar, muchas personas sienten una conexión renovada consigo mismas, mayor claridad mental, calma interior y una sensación de equilibrio y bienestar que puede acompañarte por días. También es común percibir un descanso más profundo, una respiración más consciente y una apertura emocional que te permite habitarte con más presencia y amor.
+        </p>
+        <p class="text-text-dark italic text-lg text-center pt-6 border-t border-sage-light/40 mt-10">
+          Ecos Sonoterapia es una invitación a escucharte, a sentirte y a volver a tu centro… donde todo comienza a sanar.
+        </p>
+      </div>
+
+      <div class="mt-12 rounded-2xl overflow-hidden shadow-md" style="aspect-ratio:4/3;">
+        <picture>
+          <source srcset="/assets/experiencia-sonoterapia-santiago.avif" type="image/avif">
+          <img src="/assets/experiencia-sonoterapia-santiago.jpg"
+               alt="Ambiente de una sesión de sonoterapia · Ecos Sonoterapia Santiago"
+               class="w-full h-full object-cover" loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================
        NUESTRAS SESIONES
        ==================================== -->
   <section id="sesiones" class="py-24 md:py-32 bg-warm-white">
@@ -351,7 +485,7 @@
       </div>
 
       <!-- Service Cards -->
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
         <!-- Card 1: Sonoterapia -->
         <div class="service-card reveal reveal-delay-1 flex flex-col h-full">
@@ -393,37 +527,22 @@
           <!-- Pricing -->
           <div class="border-t border-sage-light/30 pt-6 space-y-5 flex-grow flex flex-col justify-end">
             <!-- Individual -->
-            <div class="flex flex-col gap-1">
-              <div class="flex items-end justify-between">
-                <div>
-                  <span class="block text-sm font-medium text-text-dark">1 Persona</span>
-                  <span class="text-xs text-text-muted">Promo Inauguración (La Florida)</span>
-                </div>
-                <div class="text-right">
-                  <span class="text-text-muted line-through text-sm mr-2">$20.000</span>
-                  <span class="heading-serif text-2xl text-olive">$15.000</span>
-                </div>
-              </div>
+            <div class="flex items-end justify-between">
+              <span class="block text-sm font-medium text-text-dark">1 Persona</span>
+              <span class="heading-serif text-2xl text-olive">$20.000</span>
             </div>
 
-            <!-- Dual -->
-            <div class="flex flex-col gap-1">
-              <div class="flex items-end justify-between">
-                <div>
-                  <span class="block text-sm font-medium text-text-dark">2 Personas</span>
-                </div>
-                <div class="text-right">
-                  <span class="heading-serif text-xl text-olive">$17.000 <span
-                      class="text-xs text-text-muted font-sans font-normal">p/p</span></span>
-                </div>
-              </div>
+            <!-- Parejas -->
+            <div class="flex items-end justify-between">
+              <span class="block text-sm font-medium text-text-dark">Experiencia Parejas</span>
+              <span class="heading-serif text-xl text-olive">$38.000</span>
             </div>
 
             <!-- Pack 4 -->
             <div class="flex items-center justify-between bg-gold-light/10 px-3 py-2.5 rounded">
               <span class="text-xs font-semibold text-gold uppercase tracking-wider">Pack 4 Sesiones</span>
-              <span class="text-sm font-medium text-text-dark">$50.000 <span
-                  class="text-xs text-text-muted font-normal">(Promo)</span></span>
+              <span class="text-sm font-medium text-text-dark">$65.000 <span
+                  class="text-xs text-text-muted font-normal">(1 persona)</span></span>
             </div>
 
             <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20Sonoterapia%20%F0%9F%99%8F"
@@ -440,7 +559,7 @@
         <!-- Card 2: Sonoterapia + Reiki -->
         <div class="service-card reveal reveal-delay-2 flex flex-col h-full">
           <div class="flex items-start justify-between mb-6">
-            <span class="text-4xl">🔔✋</span>
+            <span class="text-4xl">✋</span>
             <span class="promo-badge">
               <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
                 <path
@@ -451,9 +570,9 @@
           </div>
 
           <a href="/reiki.html" class="hover:text-olive transition-colors">
-            <h3 class="heading-serif text-2xl mb-2">Sonoterapia y Reiki</h3>
+            <h3 class="heading-serif text-2xl mb-2">SonoReiki</h3>
           </a>
-          <p class="text-text-muted text-sm mb-5">Sesión completa en consulta o a domicilio · 1 hora 30 min</p>
+          <p class="text-text-muted text-sm mb-5">Sonoterapia + Reiki en consulta o a domicilio · 1 hora 30 min</p>
 
           <details class="group mb-8">
             <summary
@@ -465,58 +584,100 @@
               </svg>
             </summary>
             <div class="mt-3 space-y-3 text-text-body text-sm px-4 pb-2">
-              <p><strong class="text-text-dark">1. Preparación (10 min):</strong> Diagnóstico energético con péndulo.
-              </p>
-              <p><strong class="text-text-dark">2. Reiki (30 min):</strong> Canalización para restaurar el flujo y
-                eliminar bloqueos energeticos.</p>
-              <p><strong class="text-text-dark">3. Sonoterapia (40 min):</strong> Masaje sonoro vibratorio profundo con
-                cuencos.</p>
-              <p><strong class="text-text-dark">4. Cierre (10 min):</strong> Retroalimentación y recomendaciones para
-                sostener la energía.</p>
+              <p><strong class="text-text-dark">1. Preparación (10 min):</strong> Diagnóstico energético con péndulo.</p>
+              <p><strong class="text-text-dark">2. Reiki (30 min):</strong> Canalización para restaurar el flujo y eliminar bloqueos energéticos.</p>
+              <p><strong class="text-text-dark">3. Sonoterapia (40 min):</strong> Masaje sonoro vibratorio profundo con cuencos.</p>
+              <p><strong class="text-text-dark">4. Cierre (10 min):</strong> Retroalimentación y recomendaciones para sostener la energía.</p>
             </div>
           </details>
 
           <!-- Pricing -->
           <div class="border-t border-sage-light/30 pt-6 space-y-5 flex-grow flex flex-col justify-end">
             <!-- Individual -->
-            <div class="flex flex-col gap-1">
-              <div class="flex items-end justify-between">
-                <div>
-                  <span class="block text-sm font-medium text-text-dark">1 Persona</span>
-                  <span class="text-xs text-text-muted">Promo Inauguración</span>
-                </div>
-                <div class="text-right">
-                  <span class="text-text-muted line-through text-sm mr-2">$25.000</span>
-                  <span class="heading-serif text-2xl text-olive">$20.000</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- 2 Personas -->
-            <div class="flex items-center justify-between mt-3">
-              <span class="text-sm font-medium text-text-dark">2 Personas</span>
-              <span class="heading-serif text-lg text-text-dark font-bold">$17.500 <span
-                  class="text-xs text-text-muted font-normal tracking-wide">p/p</span></span>
+            <div class="flex items-end justify-between">
+              <span class="block text-sm font-medium text-text-dark">1 Persona</span>
+              <span class="heading-serif text-2xl text-olive">$25.000</span>
             </div>
 
             <!-- Pack 4 -->
             <div class="flex items-center justify-between bg-gold-light/10 px-3 py-2.5 rounded mt-auto">
               <span class="text-xs font-semibold text-gold uppercase tracking-wider">Pack 4 Sesiones</span>
-              <span class="text-sm font-medium text-text-dark">$65.000 <span
-                  class="text-xs text-text-muted font-normal">(Promo)</span></span>
+              <span class="text-sm font-medium text-text-dark">$80.000</span>
             </div>
 
-            <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20Sonoterapia%20%2B%20Reiki%20%F0%9F%99%8F"
+            <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20SonoReiki%20%F0%9F%99%8F"
               target="_blank" rel="noopener" class="btn-primary w-full justify-center text-sm mt-4">
               <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
-              Reservar Sono + Reiki
+              Reservar SonoReiki
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Reiki Online Nocturno -->
+        <div class="service-card reveal reveal-delay-3 flex flex-col h-full">
+          <div class="flex items-start justify-between mb-6">
+            <span class="text-4xl">🌙</span>
+            <span class="promo-badge" style="background:rgba(91,73,160,.12);color:#5b49a0;">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+              </svg>
+              Online · Todo Chile
+            </span>
+          </div>
+
+          <a href="/reiki-online.html" class="hover:text-olive transition-colors">
+            <h3 class="heading-serif text-2xl mb-2">Reiki + Gemoterapia Nocturno Online</h3>
+          </a>
+          <p class="text-text-muted text-sm mb-5">Sesión a distancia por videollamada · 1 hora</p>
+
+          <details class="group mb-8">
+            <summary
+              class="flex items-center justify-between cursor-pointer text-olive text-sm font-medium hover:text-olive-dark transition-colors list-none select-none bg-sage-50 px-4 py-3 rounded-lg">
+              <span>¿Qué incluye la sesión?</span>
+              <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="mt-3 space-y-3 text-text-body text-sm px-4 pb-2">
+              <p><strong class="text-text-dark">1. Preparación (10 min):</strong> Diagnóstico energético con péndulo y aplicación de gemoterapia.</p>
+              <p><strong class="text-text-dark">2. Reiki (40 min):</strong> Canalización a distancia para restaurar el flujo y equilibrar puntos energéticos.</p>
+              <p><strong class="text-text-dark">3. Cierre (10 min):</strong> Retroalimentación y recomendaciones para sostener la energía.</p>
+            </div>
+          </details>
+
+          <!-- Pricing -->
+          <div class="border-t border-sage-light/30 pt-6 space-y-5 flex-grow flex flex-col justify-end">
+            <div class="flex items-end justify-between">
+              <span class="block text-sm font-medium text-text-dark">1 Persona</span>
+              <span class="heading-serif text-2xl text-olive">$20.000</span>
+            </div>
+
+            <div class="flex items-center justify-between bg-gold-light/10 px-3 py-2.5 rounded mt-auto">
+              <span class="text-xs font-semibold text-gold uppercase tracking-wider">Pack 4 Sesiones</span>
+              <span class="text-sm font-medium text-text-dark">$65.000</span>
+            </div>
+
+            <a href="https://wa.me/56994375270?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20Reiki%20Online%20Nocturno%20%F0%9F%8C%99"
+              target="_blank" rel="noopener" class="btn-primary w-full justify-center text-sm mt-4">
+              <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Reservar Reiki Online
             </a>
           </div>
         </div>
       </div>
+
+      <!-- Aclaración de valores -->
+      <p class="text-center text-text-muted text-sm mt-10 max-w-2xl mx-auto reveal">
+        Valores de atenciones en consulta <strong>La Florida</strong> (a 2 cuadras del Metro San José de la Estrella).<br>
+        Para atención domiciliaria, consultar valores dentro de las comunas de Santiago.
+      </p>
     </div>
   </section>
   <!-- ====================================
@@ -594,6 +755,90 @@
       </div>
     </div>
   </section>
+
+  <!-- ====================================
+       OTROS SERVICIOS — CEREMONIAS + ACUÁTICA
+       ==================================== -->
+  <section id="otros-servicios" class="py-24 md:py-32 bg-warm-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase block mb-4">Otros servicios</span>
+        <div class="gold-divider mx-auto mb-8"></div>
+        <h2 class="heading-serif text-3xl md:text-4xl mb-4">
+          Espacios privados para
+          <span class="italic text-olive">momentos importantes</span>
+        </h2>
+        <p class="text-text-body max-w-2xl mx-auto">
+          En Ecos Sonoterapia también creamos espacios privados para acompañar momentos importantes de la vida, donde el sonido, la energía y la intención se entrelazan para dar profundidad y significado a cada encuentro.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+        <!-- Ceremonias Holísticas -->
+        <a href="/ceremonias.html" class="service-card reveal reveal-delay-1 flex flex-col h-full hover:shadow-lg transition-shadow group">
+          <div class="rounded-xl overflow-hidden mb-6" style="aspect-ratio:4/3;">
+            <picture>
+              <source srcset="/assets/ceremonias-holisticas-santiago.avif" type="image/avif">
+              <img src="/assets/ceremonias-holisticas-santiago.jpg"
+                   alt="Ceremonias holísticas en Santiago · Ecos Sonoterapia"
+                   class="w-full h-full object-cover" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <span class="text-3xl mb-3">🕯️</span>
+          <h3 class="heading-serif text-2xl mb-3 group-hover:text-olive transition-colors">Ceremonias Holísticas</h3>
+          <p class="text-text-body text-sm leading-relaxed mb-5 flex-grow">
+            Uniones de pareja, bendiciones de camino (baby shower), cumpleaños conscientes, círculos de mujeres, mixtos o de familia. Cada experiencia es única y personalizada según tus deseos y necesidades.
+          </p>
+          <ul class="text-text-body text-sm space-y-2 mb-6">
+            <li class="flex items-start gap-2"><span class="text-gold mt-1">•</span> Uniones de pareja</li>
+            <li class="flex items-start gap-2"><span class="text-gold mt-1">•</span> Bendiciones de camino (baby shower)</li>
+            <li class="flex items-start gap-2"><span class="text-gold mt-1">•</span> Cumpleaños conscientes</li>
+            <li class="flex items-start gap-2"><span class="text-gold mt-1">•</span> Círculos de mujeres, mixtos o de familia</li>
+          </ul>
+          <span class="text-olive text-sm font-medium inline-flex items-center gap-2 mt-auto group-hover:gap-3 transition-all">
+            Conocer más
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </span>
+        </a>
+
+        <!-- Sonoterapia Acuática -->
+        <a href="/sonoterapia-acuatica.html" class="service-card reveal reveal-delay-2 flex flex-col h-full hover:shadow-lg transition-shadow group">
+          <div class="rounded-xl overflow-hidden mb-6" style="aspect-ratio:4/3;">
+            <picture>
+              <source srcset="/assets/sonoterapia-acuatica-santiago.avif" type="image/avif">
+              <img src="/assets/sonoterapia-acuatica-santiago.jpg"
+                   alt="Sonoterapia acuática · Cuencos sobre agua"
+                   class="w-full h-full object-cover" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <span class="text-3xl mb-3">💧</span>
+          <h3 class="heading-serif text-2xl mb-3 group-hover:text-olive transition-colors">Sonoterapia Acuática</h3>
+          <p class="text-text-body text-sm leading-relaxed mb-5 flex-grow">
+            Una experiencia terapéutica que combina cuencos e instrumentos vibracionales con la inmersión o contacto con el agua. El agua amplifica las vibraciones permitiendo una relajación más intensa y profunda.
+          </p>
+          <ul class="text-text-body text-sm space-y-2 mb-6">
+            <li class="flex items-start gap-2"><span class="text-gold mt-1">•</span> Libera tensiones físicas y emocionales</li>
+            <li class="flex items-start gap-2"><span class="text-gold mt-1">•</span> Calma el sistema nervioso</li>
+            <li class="flex items-start gap-2"><span class="text-gold mt-1">•</span> Armoniza cuerpo, mente y energía</li>
+          </ul>
+          <span class="text-olive text-sm font-medium inline-flex items-center gap-2 mt-auto group-hover:gap-3 transition-all">
+            Conocer más
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <p class="text-center text-text-dark italic text-lg mt-12 reveal">
+        "Porque cada etapa merece ser honrada con presencia, amor y conexión"
+      </p>
+    </div>
+  </section>
+
 
   <!-- ====================================
        BENEFICIOS
@@ -883,11 +1128,14 @@
 
         <!-- Quick Links -->
         <div>
-          <h4 class="text-gold text-sm font-semibold tracking-widest uppercase mb-4">Navegación</h4>
+          <h4 class="text-gold text-sm font-semibold tracking-widest uppercase mb-4">Servicios</h4>
           <ul class="space-y-3 text-warm-gray text-sm">
-            <li><a href="#sobre" class="hover:text-sage-light transition-colors">Sobre la terapeuta</a></li>
             <li><a href="/sonoterapia.html" class="hover:text-sage-light transition-colors">Sonoterapia</a></li>
-            <li><a href="/reiki.html" class="hover:text-sage-light transition-colors">Sesiones de Reiki</a></li>
+            <li><a href="/reiki.html" class="hover:text-sage-light transition-colors">SonoReiki</a></li>
+            <li><a href="/reiki-online.html" class="hover:text-sage-light transition-colors">Reiki Online Nocturno</a></li>
+            <li><a href="/sonoterapia-acuatica.html" class="hover:text-sage-light transition-colors">Sonoterapia Acuática</a></li>
+            <li><a href="/ceremonias.html" class="hover:text-sage-light transition-colors">Ceremonias Holísticas</a></li>
+            <li><a href="#sobre" class="hover:text-sage-light transition-colors">Sobre la terapeuta</a></li>
           </ul>
         </div>
       </div>
